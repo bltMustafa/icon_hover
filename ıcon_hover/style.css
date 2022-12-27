@@ -1,0 +1,89 @@
+body {
+    background: #151515;
+    overflow: hidden;
+    z-index: -1;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.icon::before,
+.icon::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.50s ease;
+    border-radius: 30px;
+}
+
+.icon i {
+    position: relative;
+    color: #fff;
+    font-size: 23px;
+    margin: auto;
+    transition: all 0.25 ease;
+}
+
+.icon-fill::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16a085;
+}
+
+.icon-fill:hover::before {
+    box-shadow: inset 0 0 0 60px #16a085;
+}
+
+.icon-enter::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16a085;
+}
+
+.icon-enter:hover::before {
+    box-shadow: inset 0 0 0 60px #16a085;
+}
+
+.icon-expand::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16a085;
+}
+
+.icon-expand:hover::before {
+    box-shadow: inset 0 0 0 60px #16a085;
+}
+
+.icon-collapse::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16a085;
+}
+
+.icon-collapse:hover::before {
+    box-shadow: inset 0 0 0 60px #16a085;
+}
+
+.icon-rotate::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px #16a085;
+}
+
+.icon-rotate:hover::before {
+    box-shadow: inset 0 0 0 60px #16a085;
+}
